@@ -54,7 +54,7 @@ worksheet.cols.push cr
 ```ruby
 worksheet.sheet_pr ||= RubyXL::WorksheetProperties.new
 worksheet.sheet_pr.outline_pr ||= RubyXL::OutlineProperties.new
-worksheet.sheet_pr.outline_pr.summary_below = false # 上側でまとめる
+worksheet.sheet_pr.outline_pr.summary_right = false # 左側でまとめる
 ```
 
 これらを組み合わせたものが、`grouping.rb`となる。
